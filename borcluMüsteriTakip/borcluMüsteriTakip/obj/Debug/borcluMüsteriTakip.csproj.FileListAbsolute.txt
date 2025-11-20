@@ -1,0 +1,10 @@
+C:\Users\graem\OneDrive\Belgeler\SharpDevelop Projects\borcluMüsteriTakip\borcluMüsteriTakip\bin\Debug\borcluMüsteriTakip.exe.config
+C:\Users\graem\OneDrive\Belgeler\SharpDevelop Projects\borcluMüsteriTakip\borcluMüsteriTakip\bin\Debug\borcluMüsteriTakip.exe
+C:\Users\graem\OneDrive\Belgeler\SharpDevelop Projects\borcluMüsteriTakip\borcluMüsteriTakip\bin\Debug\borcluMüsteriTakip.pdb
+C:\Users\graem\OneDrive\Belgeler\SharpDevelop Projects\borcluMüsteriTakip\borcluMüsteriTakip\obj\Debug\borcluMüsteriTakip.csprojResolveAssemblyReference.cache
+C:\Users\graem\OneDrive\Belgeler\SharpDevelop Projects\borcluMüsteriTakip\borcluMüsteriTakip\obj\Debug\borcluMüsteriTakip.MainForm.resources
+C:\Users\graem\OneDrive\Belgeler\SharpDevelop Projects\borcluMüsteriTakip\borcluMüsteriTakip\obj\Debug\borcluMüsteriTakip.csproj.GenerateResource.Cache
+C:\Users\graem\OneDrive\Belgeler\SharpDevelop Projects\borcluMüsteriTakip\borcluMüsteriTakip\obj\Debug\borcluMüsteriTakip.exe
+C:\Users\graem\OneDrive\Belgeler\SharpDevelop Projects\borcluMüsteriTakip\borcluMüsteriTakip\obj\Debug\borcluMüsteriTakip.pdb
+C:\Users\graem\OneDrive\Belgeler\SharpDevelop Projects\borcluMüsteriTakip\borcluMüsteriTakip\obj\Debug\borcluMüsteriTakip.Form2.resources
+C:\Users\graem\OneDrive\Belgeler\SharpDevelop Projects\borcluMüsteriTakip\borcluMüsteriTakip\obj\Debug\borcluMüsteriTakip.Form3.resources
