@@ -130,7 +130,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label2
 			// 
-			this.label2.Location = new System.Drawing.Point(127, 124);
+			this.label2.Location = new System.Drawing.Point(29, 124);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(120, 33);
 			this.label2.TabIndex = 1;
@@ -138,7 +138,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label3
 			// 
-			this.label3.Location = new System.Drawing.Point(127, 157);
+			this.label3.Location = new System.Drawing.Point(29, 157);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(120, 33);
 			this.label3.TabIndex = 2;
@@ -146,7 +146,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label4
 			// 
-			this.label4.Location = new System.Drawing.Point(127, 190);
+			this.label4.Location = new System.Drawing.Point(29, 190);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(120, 33);
 			this.label4.TabIndex = 3;
@@ -154,7 +154,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label5
 			// 
-			this.label5.Location = new System.Drawing.Point(127, 223);
+			this.label5.Location = new System.Drawing.Point(29, 223);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(120, 33);
 			this.label5.TabIndex = 4;
@@ -162,7 +162,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label6
 			// 
-			this.label6.Location = new System.Drawing.Point(127, 256);
+			this.label6.Location = new System.Drawing.Point(29, 256);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(120, 33);
 			this.label6.TabIndex = 5;
@@ -170,7 +170,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label7
 			// 
-			this.label7.Location = new System.Drawing.Point(127, 289);
+			this.label7.Location = new System.Drawing.Point(29, 289);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(120, 33);
 			this.label7.TabIndex = 6;
@@ -178,7 +178,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label8
 			// 
-			this.label8.Location = new System.Drawing.Point(127, 322);
+			this.label8.Location = new System.Drawing.Point(29, 322);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(120, 33);
 			this.label8.TabIndex = 7;
@@ -186,7 +186,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label9
 			// 
-			this.label9.Location = new System.Drawing.Point(127, 355);
+			this.label9.Location = new System.Drawing.Point(29, 355);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(120, 33);
 			this.label9.TabIndex = 8;
@@ -194,7 +194,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label10
 			// 
-			this.label10.Location = new System.Drawing.Point(127, 388);
+			this.label10.Location = new System.Drawing.Point(29, 388);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(120, 33);
 			this.label10.TabIndex = 9;
@@ -202,7 +202,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label11
 			// 
-			this.label11.Location = new System.Drawing.Point(127, 421);
+			this.label11.Location = new System.Drawing.Point(29, 421);
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(120, 33);
 			this.label11.TabIndex = 10;
@@ -210,7 +210,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label12
 			// 
-			this.label12.Location = new System.Drawing.Point(127, 454);
+			this.label12.Location = new System.Drawing.Point(29, 454);
 			this.label12.Name = "label12";
 			this.label12.Size = new System.Drawing.Size(120, 33);
 			this.label12.TabIndex = 11;
@@ -218,7 +218,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label13
 			// 
-			this.label13.Location = new System.Drawing.Point(127, 487);
+			this.label13.Location = new System.Drawing.Point(29, 487);
 			this.label13.Name = "label13";
 			this.label13.Size = new System.Drawing.Size(120, 33);
 			this.label13.TabIndex = 12;
@@ -226,7 +226,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label14
 			// 
-			this.label14.Location = new System.Drawing.Point(127, 520);
+			this.label14.Location = new System.Drawing.Point(29, 520);
 			this.label14.Name = "label14";
 			this.label14.Size = new System.Drawing.Size(120, 33);
 			this.label14.TabIndex = 13;
@@ -234,7 +234,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label15
 			// 
-			this.label15.Location = new System.Drawing.Point(127, 553);
+			this.label15.Location = new System.Drawing.Point(29, 553);
 			this.label15.Name = "label15";
 			this.label15.Size = new System.Drawing.Size(120, 33);
 			this.label15.TabIndex = 14;
@@ -242,7 +242,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label16
 			// 
-			this.label16.Location = new System.Drawing.Point(127, 586);
+			this.label16.Location = new System.Drawing.Point(29, 586);
 			this.label16.Name = "label16";
 			this.label16.Size = new System.Drawing.Size(120, 33);
 			this.label16.TabIndex = 15;
@@ -250,7 +250,7 @@ namespace borcluMüsteriTakip
 			// 
 			// label17
 			// 
-			this.label17.Location = new System.Drawing.Point(127, 619);
+			this.label17.Location = new System.Drawing.Point(29, 619);
 			this.label17.Name = "label17";
 			this.label17.Size = new System.Drawing.Size(120, 33);
 			this.label17.TabIndex = 16;
@@ -260,14 +260,14 @@ namespace borcluMüsteriTakip
 			// 
 			this.dateTimePicker1.CustomFormat = "";
 			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dateTimePicker1.Location = new System.Drawing.Point(318, 124);
+			this.dateTimePicker1.Location = new System.Drawing.Point(220, 124);
 			this.dateTimePicker1.Name = "dateTimePicker1";
 			this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
 			this.dateTimePicker1.TabIndex = 17;
 			// 
 			// textBox1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(318, 157);
+			this.textBox1.Location = new System.Drawing.Point(220, 157);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(200, 22);
 			this.textBox1.TabIndex = 18;
@@ -314,63 +314,63 @@ namespace borcluMüsteriTakip
 			// 
 			// textBox2
 			// 
-			this.textBox2.Location = new System.Drawing.Point(318, 190);
+			this.textBox2.Location = new System.Drawing.Point(220, 190);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(200, 22);
 			this.textBox2.TabIndex = 23;
 			// 
 			// textBox3
 			// 
-			this.textBox3.Location = new System.Drawing.Point(318, 223);
+			this.textBox3.Location = new System.Drawing.Point(220, 223);
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(200, 22);
 			this.textBox3.TabIndex = 24;
 			// 
 			// textBox4
 			// 
-			this.textBox4.Location = new System.Drawing.Point(318, 256);
+			this.textBox4.Location = new System.Drawing.Point(220, 256);
 			this.textBox4.Name = "textBox4";
 			this.textBox4.Size = new System.Drawing.Size(200, 22);
 			this.textBox4.TabIndex = 25;
 			// 
 			// textBox5
 			// 
-			this.textBox5.Location = new System.Drawing.Point(318, 289);
+			this.textBox5.Location = new System.Drawing.Point(220, 289);
 			this.textBox5.Name = "textBox5";
 			this.textBox5.Size = new System.Drawing.Size(200, 22);
 			this.textBox5.TabIndex = 26;
 			// 
 			// textBox6
 			// 
-			this.textBox6.Location = new System.Drawing.Point(318, 322);
+			this.textBox6.Location = new System.Drawing.Point(220, 322);
 			this.textBox6.Name = "textBox6";
 			this.textBox6.Size = new System.Drawing.Size(268, 22);
 			this.textBox6.TabIndex = 27;
 			// 
 			// textBox7
 			// 
-			this.textBox7.Location = new System.Drawing.Point(318, 355);
+			this.textBox7.Location = new System.Drawing.Point(220, 355);
 			this.textBox7.Name = "textBox7";
 			this.textBox7.Size = new System.Drawing.Size(200, 22);
 			this.textBox7.TabIndex = 28;
 			// 
 			// textBox8
 			// 
-			this.textBox8.Location = new System.Drawing.Point(318, 388);
+			this.textBox8.Location = new System.Drawing.Point(220, 388);
 			this.textBox8.Name = "textBox8";
 			this.textBox8.Size = new System.Drawing.Size(200, 22);
 			this.textBox8.TabIndex = 29;
 			// 
 			// textBox11
 			// 
-			this.textBox11.Location = new System.Drawing.Point(318, 487);
+			this.textBox11.Location = new System.Drawing.Point(220, 487);
 			this.textBox11.Name = "textBox11";
 			this.textBox11.Size = new System.Drawing.Size(200, 22);
 			this.textBox11.TabIndex = 32;
 			// 
 			// textBox12
 			// 
-			this.textBox12.Location = new System.Drawing.Point(318, 520);
+			this.textBox12.Location = new System.Drawing.Point(220, 520);
 			this.textBox12.Name = "textBox12";
 			this.textBox12.Size = new System.Drawing.Size(330, 22);
 			this.textBox12.TabIndex = 33;
@@ -379,7 +379,7 @@ namespace borcluMüsteriTakip
 			// 
 			this.dateTimePicker2.CustomFormat = "";
 			this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dateTimePicker2.Location = new System.Drawing.Point(318, 586);
+			this.dateTimePicker2.Location = new System.Drawing.Point(220, 586);
 			this.dateTimePicker2.Name = "dateTimePicker2";
 			this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
 			this.dateTimePicker2.TabIndex = 35;
@@ -388,7 +388,7 @@ namespace borcluMüsteriTakip
 			// 
 			this.dateTimePicker3.CustomFormat = "";
 			this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dateTimePicker3.Location = new System.Drawing.Point(318, 619);
+			this.dateTimePicker3.Location = new System.Drawing.Point(220, 619);
 			this.dateTimePicker3.Name = "dateTimePicker3";
 			this.dateTimePicker3.Size = new System.Drawing.Size(200, 22);
 			this.dateTimePicker3.TabIndex = 36;
@@ -396,7 +396,7 @@ namespace borcluMüsteriTakip
 			// comboBox1
 			// 
 			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(318, 421);
+			this.comboBox1.Location = new System.Drawing.Point(220, 421);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(200, 24);
 			this.comboBox1.TabIndex = 37;
@@ -404,7 +404,7 @@ namespace borcluMüsteriTakip
 			// comboBox2
 			// 
 			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(318, 457);
+			this.comboBox2.Location = new System.Drawing.Point(220, 457);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(200, 24);
 			this.comboBox2.TabIndex = 38;
@@ -416,7 +416,7 @@ namespace borcluMüsteriTakip
 			"istendi",
 			"bekliyor",
 			"verildi"});
-			this.comboBox3.Location = new System.Drawing.Point(318, 553);
+			this.comboBox3.Location = new System.Drawing.Point(220, 553);
 			this.comboBox3.Name = "comboBox3";
 			this.comboBox3.Size = new System.Drawing.Size(200, 24);
 			this.comboBox3.TabIndex = 39;
@@ -426,9 +426,9 @@ namespace borcluMüsteriTakip
 			this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.listBox1.FormattingEnabled = true;
 			this.listBox1.ItemHeight = 15;
-			this.listBox1.Location = new System.Drawing.Point(598, 108);
+			this.listBox1.Location = new System.Drawing.Point(461, 108);
 			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(1193, 139);
+			this.listBox1.Size = new System.Drawing.Size(1330, 139);
 			this.listBox1.TabIndex = 40;
 			this.listBox1.SelectedIndexChanged += new System.EventHandler(this.ListBox1SelectedIndexChanged);
 			// 

@@ -111,7 +111,7 @@ namespace borcluMüsteriTakip
 				string f11= dr["SatisDanismani"].ToString();
 				string f12 = dr["Magazalar"].ToString();
 				string f13 = dr["adet"].ToString();
-				string f14 = dr["Not"].ToString();
+				string f14 = dr["Aciklama"].ToString();
 				string f15 = dr["Durum"].ToString();
 				string f16 = dr["TerminTarihi"].ToString();
 				
@@ -129,35 +129,42 @@ namespace borcluMüsteriTakip
 		}
 		void Button1Click(object sender, EventArgs e)
 		{
-			OleDbConnection cn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=borcluTakip.accdb;Persist Security Info=False;");
+			
+			OleDbConnection cn = new OleDbConnection(
+				"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=borcluTakip.accdb;Persist Security Info=False;");
 			cn.Open();
-			OleDbCommand cmd=new OleDbCommand();
-			string kayittarihi=DateTime.Today.ToShortDateString();
-			string urunkodu=textBox1.Text.ToString();
-			UInt64 barkod=Convert.ToUInt64(textBox2.Text);
-			string urunadi=textBox3.Text.ToString();
-			string urunanagrubu=textBox4.Text.ToString();
-			string urunaltgrubu=textBox5.Text.ToString();
-			string turu=textBox6.Text.ToString();
-			string musteriadi=textBox7.Text.ToString();
-			UInt64 telefon=Convert.ToUInt64(textBox8.Text);
-			string satisdanismani=comboBox1.SelectedItem.ToString();
-			string magazalar=comboBox2.SelectedItem.ToString();
-			int sayi=Convert.ToInt32(textBox11.Text);
-			string not=textBox12.Text.ToString();
-			string durum=comboBox3.SelectedItem.ToString();
-			string termin=DateTime.Today.ToShortDateString();
-			string teslim=dateTimePicker3.Text.ToString();
-			string querystring = string.Format("insert into BekleyenTeslimatlar(UrunKodu,Barkod,UrunAdi,UrunAnaGrubu,UrunAltGrubu,Turu,MusteriAdi,Telefon,SatisDanismani,Magazalar,Adet,Not,Durum,TerminTarihi) " +
-			                                   "values('{0}',{1},'{2}','{3}','{4}','{5}','{6}',{7},'{8}','{9}','{10}',{11},'{12}','{13}')",
-			                                    urunkodu, barkod, urunadi, urunanagrubu, urunaltgrubu, turu, musteriadi, telefon, satisdanismani, magazalar, sayi, not, durum, termin);
-			/*cmd.CommandType=CommandType.Text;
-			cmd.CommandText=querystring;
-			cmd.Connection=cn;*/
-			OleDbCommand cmdd = new OleDbCommand(querystring, cn);
-			cmdd.ExecuteNonQuery();
-			if(cmd.ExecuteNonQuery()==1)
-				MessageBox.Show("kayıt başarılı");
+
+			string query = @"INSERT INTO BekleyenTeslimatlar
+    ([KayitTarihi], [UrunKodu], [Barkod], [UrunAdi], [UrunAnaGrubu], [UrunAltGrubu], [Turu],
+     [MusteriAdi], [Telefon], [SatisDanismani], [Magazalar], [Adet], [Aciklama], [Durum],
+     [TerminTarihi], [TeslimTarihi])
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+			OleDbCommand cmd = new OleDbCommand(query, cn);
+
+			// TABLOYA GÖRE DOĞRU SIRALAMA
+			cmd.Parameters.Add("?", OleDbType.Date).Value = dateTimePicker1.Value;          // KayitTarihi
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox1.Text;              // UrunKodu
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox2.Text;              // Barkod
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox3.Text;              // UrunAdi
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox4.Text;              // UrunAnaGrubu
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox5.Text;              // UrunAltGrubu
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox6.Text;              // Turu
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox7.Text;              // MusteriAdi
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox8.Text;              // Telefon
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = comboBox1.Text;             // SatisDanismani
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = comboBox2.Text;             // Magazalar
+			cmd.Parameters.Add("?", OleDbType.Integer).Value = Convert.ToInt32(textBox11.Text); // Adet
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox12.Text;             // Aciklama
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = comboBox3.Text;             // Durum
+			cmd.Parameters.Add("?", OleDbType.Date).Value = dateTimePicker2.Value;         // TerminTarihi
+			cmd.Parameters.Add("?", OleDbType.Date).Value = dateTimePicker3.Value;         // TeslimTarihi
+
+
+			if (cmd.ExecuteNonQuery() == 1)
+				MessageBox.Show("Kayıt başarılı");
+			
+			
 		}
 		void ListBox1SelectedIndexChanged(object sender, EventArgs e)
 		{
@@ -190,10 +197,63 @@ namespace borcluMüsteriTakip
 			OleDbConnection cn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=borcluTakip.accdb;Persist Security Info=False;");
 			cn.Open();
 			OleDbCommand cmd=new OleDbCommand(); //= new OleDbCommand(@"UPDATE BekleyenTeslimatlar SET KayitTarihi = @kayittarihi, UrunKodu = @urunkodu, Barkod = @barkod, UrunAdi = @urunadi, UrunAnaGrubu = @urunanagrubu,UrunAltGrubu =@urunaltgrubu,Turu=@turu,MusteriAdi = @musteriadi,Telefon=@telefon,SatisDanismani=@satisdanismani,Magazalar=@magazalar,adet=@adet,Not=@not,Durum=@durum,TerminTarihi=@termintarihi,Teslimtarihi = @teslimtarihi WHERE KayitNo = @No",cn);
-			string querystring = string.Format("UPDATE BekleyenTeslimatlar SET {0}{1}'{2}{3}'{4}{5}'{6}{7}'{8}{9}'{10}{11}'{12}{13}", " MusteriAdi='", textBox7.Text, ",Telefon='", textBox8.Text, ",SatisDanismani='", comboBox1.SelectedItem, ",Magazalar='", comboBox2.SelectedItem, ",Durum='", comboBox3.SelectedItem, ",TeslimTarihi='", dateTimePicker3.Text, " where Kimlik=", Convert.ToInt32(label18.Text));
-			cmd.CommandType=CommandType.Text;
-			cmd.CommandText=querystring;
-			cmd.Connection=cn;
+			string query = @"UPDATE BekleyenTeslimatlar SET
+    [KayitTarihi] = ?,
+    [UrunKodu] = ?,
+    [Barkod] = ?,
+    [UrunAdi] = ?,
+    [UrunAnaGrubu] = ?,
+    [UrunAltGrubu] = ?,
+    [Turu] = ?,
+    [MusteriAdi] = ?,
+    [Telefon] = ?,
+    [SatisDanismani] = ?,
+    [Magazalar] = ?,
+    [Adet] = ?,
+    [Aciklama] = ?,
+    [Durum] = ?,
+    [TerminTarihi] = ?,
+    [TeslimTarihi] = ?
+WHERE Kimlik = ?";   // 🔥 SON PARA
+			cmd = new OleDbCommand(query, cn);
+
+			// 1
+			cmd.Parameters.Add("?", OleDbType.Date).Value = dateTimePicker1.Value;
+			// 2
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox1.Text;
+			// 3
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox2.Text;
+			// 4
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox3.Text;
+			// 5
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox4.Text;
+			// 6
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox5.Text;
+			// 7
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox6.Text;
+			// 8
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox7.Text;
+			// 9
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox8.Text;
+			// 10
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = comboBox1.Text;
+			// 11
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = comboBox2.Text;
+			// 12
+			cmd.Parameters.Add("?", OleDbType.Integer).Value = Convert.ToInt32(textBox11.Text);
+			// 13
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = textBox12.Text;
+			// 14
+			cmd.Parameters.Add("?", OleDbType.VarChar).Value = comboBox3.Text;
+			// 15
+			cmd.Parameters.Add("?", OleDbType.Date).Value = dateTimePicker2.Value;
+			// 16
+			cmd.Parameters.Add("?", OleDbType.Date).Value = dateTimePicker3.Value;
+			// 17 - WHERE Kimlik
+			cmd.Parameters.Add("?", OleDbType.Integer).Value = Convert.ToInt32(label18.Text);
+
+				if (cmd.ExecuteNonQuery() == 1)
+				MessageBox.Show("Kayıt başarılı");
 			
 			//cmd.Connection = cn;
 			//MessageBox.Show(dateTimePicker1.Text);
@@ -214,11 +274,6 @@ namespace borcluMüsteriTakip
 			cmd.Parameters.AddWithValue("@termintarihi", dateTimePicker2.Text.ToString());
 			cmd.Parameters.AddWithValue("@teslimtarihi", dateTimePicker3.Text.ToString());
 			cmd.Parameters.AddWithValue("@No", Convert.ToInt32(label18.Text));*/
-			if(1==cmd.ExecuteNonQuery())
-			{
-				MessageBox.Show("Update Success!");
-				cn.Close();
-			}
 			cn.Close();
 		}
 	}
